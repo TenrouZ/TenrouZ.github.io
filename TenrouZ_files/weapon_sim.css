@@ -40,7 +40,7 @@ select#weapon_select {
 	overflow:hidden;
 }
 #weapon_tab div {
-	background:url(/web/20190622235301im_/http://members.mhf-z.jp/contents/quest/tenrou/img/tab_weapon_on.png) no-repeat;
+	background:url(../TenrouZ_files/tab_weapon_on.png) no-repeat;
 	width:40px;
 	height:32px;
 	margin:2px;
@@ -49,13 +49,13 @@ select#weapon_select {
 	overflow:hidden;
 }
 #weapon_tab a {
-	background:url(/web/20190622235301im_/http://members.mhf-z.jp/contents/quest/tenrou/img/tab_weapon_off.png) no-repeat;
+	background:url(../TenrouZ_files/tab_weapon_off.png) no-repeat;
 	width:40px;
 	height:32px;
 	display:block;
 }
 #weapon_tab a:hover {
-	background:url(/web/20190622235301im_/http://members.mhf-z.jp/contents/quest/tenrou/img/tab_weapon_over.png) no-repeat;
+	background:url(../TenrouZ_files/tab_weapon_over.png) no-repeat;
 }
 #weapon_tab a span {
 	position:absolute;
@@ -164,8 +164,8 @@ table td.value .slider { height:24px; width:234px; display:inline-block; float:l
 	.grip  { position:absolute; width:8px; height:22px; left:27px; top:0px; background-color:#fff; border:1px solid #ccc; cursor:w-resize; }
 	.grip:hover { background-color:#ffc; }
 	div.minus, div.plus  { position:absolute; background:no-repeat center center; width:24px; height:24px; display:block; cursor:pointer; }
-	div.minus { left:0px; background-image:url(/web/20190622235301im_/http://members.mhf-z.jp/contents/quest/tenrou/img/btn_minus.gif); }
-	div.plus { right:8px; background-image:url(/web/20190622235301im_/http://members.mhf-z.jp/contents/quest/tenrou/img/btn_plus.gif); }
+	div.minus { left:0px; background-image:url(../TenrouZ_files/btn_minus.gif); }
+	div.plus { right:8px; background-image:url(../TenrouZ_files/btn_minus.gif); }
 table td.value .text { width:58px; float:left; }
 
 table td.value .selectLV { padding:4px; }
@@ -179,7 +179,7 @@ table tfoot td .text { width:40px; display:inline-block; }
 table tfoot td.costover { background-color:#f00; }
 
 table tfoot .slot{ position:absolute; left:6px; top:6px; overflow:hidden; }
-table tfoot .slot div{ width:20px; height:20px; background:url(/web/20190622235301im_/http://members.mhf-z.jp/contents/quest/tenrou/img/slot.png) no-repeat; float:left; margin:0 2px; }
+table tfoot .slot div{ width:20px; height:20px; background:url(../TenrouZ_files/slot.png) no-repeat; float:left; margin:0 2px; }
 
 table tfoot .slot div.seal{ background-position:0 0; }
 table tfoot .slot div.seal.on{ background-position:0 -20px; }
