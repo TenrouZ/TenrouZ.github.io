@@ -165,7 +165,7 @@ table td.value .slider { height:24px; width:234px; display:inline-block; float:l
 	.grip:hover { background-color:#ffc; }
 	div.minus, div.plus  { position:absolute; background:no-repeat center center; width:24px; height:24px; display:block; cursor:pointer; }
 	div.minus { left:0px; background-image:url(../TenrouZ_files/btn_minus.gif); }
-	div.plus { right:8px; background-image:url(../TenrouZ_files/btn_minus.gif); }
+	div.plus { right:8px; background-image:url(../TenrouZ_files/btn_plus.gif); }
 table td.value .text { width:58px; float:left; }
 
 table td.value .selectLV { padding:4px; }
@@ -188,25 +188,3 @@ table tfoot .slot div.stone{ background-position:0 -40px; }
 p.note { margin-top:6px; font-size:11px; line-height:14px; }
 
 p.footnote { position:absolute; bottom:-18px; left:4px; font-size:10px; color:#aaa; }
-
-/*
-     FILE ARCHIVED ON 23:53:01 Jun 22, 2019 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 13:43:10 Jan 17, 2023.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 147.924
-  exclusion.robots: 0.084
-  exclusion.robots.policy: 0.076
-  RedisCDXSource: 4.946
-  esindex: 0.008
-  LoadShardBlock: 123.613 (3)
-  PetaboxLoader3.datanode: 110.927 (4)
-  CDXLines.iter: 16.115 (3)
-  load_resource: 47.891
-  PetaboxLoader3.resolve: 17.101
-*/
