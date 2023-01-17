@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+/***********************************************/
+/* FileName:weapon_sim.css                       */
+/***********************************************/
+
+*[unselectable="on"]{cursor:default; user-select: none; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
+body {
+	text-align:left;
+	-webkit-text-size-adjust:100%;
+}
+.wrapper {
+	position:absolute;
+	left:50%;
+	top:0;
+	background-color:#ccc;
+	width:700px;
+	height:430px;
+	margin-left:-354px;
+	padding:15px 4px;
+}
+
+select#weapon_select {
+	width:220px;
+	height:24px;
+	margin:0 8px;
+	padding:2px;
+	font-size:14px;
+	border:0;
+}
+
+#weapon_tab {
+	position:absolute;
+	top:12px;
+	left:248px;
+	width:440px;
+	height:72px;
+	font-size:0;
+	z-index:100;
+	overflow:hidden;
+}
+#weapon_tab div {
+	background:url(/web/20190622235301im_/http://members.mhf-z.jp/contents/quest/tenrou/img/tab_weapon_on.png) no-repeat;
+	width:40px;
+	height:32px;
+	margin:2px;
+	border-radius:4px;
+	display:inline-block;
+	overflow:hidden;
+}
+#weapon_tab a {
+	background:url(/web/20190622235301im_/http://members.mhf-z.jp/contents/quest/tenrou/img/tab_weapon_off.png) no-repeat;
+	width:40px;
+	height:32px;
+	display:block;
+}
+#weapon_tab a:hover {
+	background:url(/web/20190622235301im_/http://members.mhf-z.jp/contents/quest/tenrou/img/tab_weapon_over.png) no-repeat;
+}
+#weapon_tab a span {
+	position:absolute;
+	width:0;
+	height:0;
+	overflow:hidden;
+}
+#weapon_tab .tab_bas,
+#weapon_tab .tab_bas a {
+	background-position:0px 0px;
+}
+#weapon_tab .tab_twn,
+#weapon_tab .tab_twn a {
+	background-position:-40px 0px;
+}
+#weapon_tab .tab_bld,
+#weapon_tab .tab_bld a {
+	background-position:-80px 0px;
+}
+#weapon_tab .tab_sam,
+#weapon_tab .tab_sam a {
+	background-position:-120px 0px;
+}
+#weapon_tab .tab_hmm,
+#weapon_tab .tab_hmm a {
+	background-position:-160px 0px;
+}
+#weapon_tab .tab_hrn,
+#weapon_tab .tab_hrn a {
+	background-position:-200px 0px;
+}
+#weapon_tab .tab_lnc,
+#weapon_tab .tab_lnc a {
+	background-position:-240px 0px;
+}
+#weapon_tab .tab_gnc,
+#weapon_tab .tab_gnc a {
+	background-position:-280px 0px;
+}
+#weapon_tab .tab_saf,
+#weapon_tab .tab_saf a {
+	background-position:-320px 0px;
+}
+#weapon_tab .tab_srk,
+#weapon_tab .tab_srk a {
+	background-position:-360px 0px;
+}
+#weapon_tab .tab_mgs,
+#weapon_tab .tab_mgs a {
+	background-position:-400px 0px;
+}
+#weapon_tab .tab_lgn,
+#weapon_tab .tab_lgn a {
+	background-position:-440px 0px;
+}
+#weapon_tab .tab_hgn,
+#weapon_tab .tab_hgn a {
+	background-position:-480px 0px;
+}
+#weapon_tab .tab_bow,
+#weapon_tab .tab_bow a {
+	background-position:-520px 0px;
+}
+
+
+ul#weapons {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+ul#weapons li {
+	width:670px;
+	padding:5px 20px;
+	position:relative;
+	display:none;
+}
+ul#weapons li#bas { display:block; }
+
+h2 { line-height:20px; font-size:14px; font-weight:bold; text-align:left; }
+
+.left_box { width:200px; padding-top:8px; padding-right:20px; float:left; }
+.left_box .fig { margin-bottom:10px; }
+.left_box table {}
+.left_box table caption { font-size:14px; font-weight:bold; text-align:left; }
+
+.right_box { width:448px; padding-top:50px; float:left; }
+.right_box table { width:444px; }
+table, table th, table td { border:solid 2px #aaa; }
+table th { text-align:center; }
+table td { text-align:left; }
+table tr { background-color:#fff; }
+table tr.disabled { background-color:#999; }
+table tr.disabled div, table tr.disabled a { visibility:hidden; }
+table th, table td { color:#222; padding:4px; }
+table thead th { background-color:#000; color:#fff; }
+
+table th.item { width:64px; }
+table th.value {}
+table th.cost { width:48px; }
+
+table .text { background-color:#fff; height:22px; line-height:22px; padding:0 3px; border:1px solid #ccc; text-align:right; color:#000; }
+
+table td.value .slider { height:24px; width:234px; display:inline-block; float:left; position:relative; }
+	.bar { position:absolute; width:160px; height:4px; left:32px; top:9px; background-color:#aaa; border:1px solid #666; cursor: w-resize; }
+	.grip  { position:absolute; width:8px; height:22px; left:27px; top:0px; background-color:#fff; border:1px solid #ccc; cursor:w-resize; }
+	.grip:hover { background-color:#ffc; }
+	div.minus, div.plus  { position:absolute; background:no-repeat center center; width:24px; height:24px; display:block; cursor:pointer; }
+	div.minus { left:0px; background-image:url(/web/20190622235301im_/http://members.mhf-z.jp/contents/quest/tenrou/img/btn_minus.gif); }
+	div.plus { right:8px; background-image:url(/web/20190622235301im_/http://members.mhf-z.jp/contents/quest/tenrou/img/btn_plus.gif); }
+table td.value .text { width:58px; float:left; }
+
+table td.value .selectLV { padding:4px; }
+	.kireLV { width:290px; height:9px; margin-top:2px; border:1px solid #666; overflow:hidden; position:relative; }
+		.kireLV img{ position:absolute; left:0; top:0; }
+
+table td.cost .text { width:40px; }
+
+table tfoot td { position:relative; background-color:#000; color:#fff; text-align:right; line-height:24px; }
+table tfoot td .text { width:40px; display:inline-block; }
+table tfoot td.costover { background-color:#f00; }
+
+table tfoot .slot{ position:absolute; left:6px; top:6px; overflow:hidden; }
+table tfoot .slot div{ width:20px; height:20px; background:url(/web/20190622235301im_/http://members.mhf-z.jp/contents/quest/tenrou/img/slot.png) no-repeat; float:left; margin:0 2px; }
+
+table tfoot .slot div.seal{ background-position:0 0; }
+table tfoot .slot div.seal.on{ background-position:0 -20px; }
+table tfoot .slot div.stone{ background-position:0 -40px; }
+
+p.note { margin-top:6px; font-size:11px; line-height:14px; }
+
+p.footnote { position:absolute; bottom:-18px; left:4px; font-size:10px; color:#aaa; }
+
+/*
+     FILE ARCHIVED ON 23:53:01 Jun 22, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:43:10 Jan 17, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 147.924
+  exclusion.robots: 0.084
+  exclusion.robots.policy: 0.076
+  RedisCDXSource: 4.946
+  esindex: 0.008
+  LoadShardBlock: 123.613 (3)
+  PetaboxLoader3.datanode: 110.927 (4)
+  CDXLines.iter: 16.115 (3)
+  load_resource: 47.891
+  PetaboxLoader3.resolve: 17.101
+*/
